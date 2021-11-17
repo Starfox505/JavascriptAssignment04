@@ -21,3 +21,17 @@ console.log(calculateCircumference(15));
 // Example Output:
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
+
+let Mississippi = searchString("s", "mississippi");
+
+function searchString(character, word) {
+  let counter = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] == character) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+console.log(searchString("s", "mississippi"));
